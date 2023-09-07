@@ -1,0 +1,215 @@
+@import "bootstrap/bootstrap";
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #4c545d;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #9fabb2;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.header-image {
+  background-image: url(../clipboardlandingpage/bg-header-desktop.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-down(md) {
+    background-image: url(../clipboardlandingpage/bg-header-mobile.png);
+  }
+}
+
+.container {
+  @include media-breakpoint-down(md){
+    width: min(500px, 85%);
+  }
+
+  @include media-breakpoint-down(sm){
+    width: min(375px, 95%);
+  }
+}
+
+.width-50 {
+  width: min(690px, 100%);
+}
+
+.width-md-75 {
+  width: 60%;
+  
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.width-95 {
+  width: 95%;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.image-computer {
+  transform: translateX(-13.5%);
+  max-width: 120%;
+
+  @include media-breakpoint-down(md) {
+    transform: translateX(0);
+    max-width: 100%;
+  }
+}
+
+.image-devices {
+  max-width: 100%;
+}
+
+.ios-button {
+  background: #26baa4;
+  margin-right: 0.5rem;
+  box-shadow: 0 3px 0 #25a18e;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateY(2%);
+    box-shadow: 0 2px 0 #25a18e;
+  }
+}
+
+.mac-button {
+  background: #6173ff;
+  margin-left: 0.5rem;
+  box-shadow: 0 3px 0 #4d5bd1;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateY(2%);
+    box-shadow: 0 2px 0 #4d5bd1;
+  }
+
+  @include media-breakpoint-down (md){
+    margin-top: 1.5rem;
+  }
+}
+
+.ios-button, .mac-button {
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 2.3rem;
+  transition: all 0.1s;
+
+  @include media-breakpoint-down (md){
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem 2.3rem;
+  }
+}
+
+.footer {
+  background: #f5f6f8;
+  
+  .container {
+    max-width: 1200px;
+  }
+
+  & .main-logo {
+    width: 50px;
+
+    @include media-breakpoint-down(xl){
+      margin-left: 1rem;
+    }
+
+    @include media-breakpoint-down(md){
+      margin: 2rem 0;
+    }
+  }
+
+  & p {
+    display: inline-block;
+    padding: 0.3rem 0;
+    color: #4c545d;
+
+    @include media-breakpoint-down(md){
+      margin: 0.4rem 0;
+    }
+  }
+
+  & .socials {
+    @include media-breakpoint-down(md){
+      margin: 2.5rem 0;
+    }
+  }
+
+  & .socials:nth-child(n+2) {
+    margin-left: 1.3rem;
+
+    @include media-breakpoint-down(md){
+      margin-left: 2.65rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.gy-6 {
+  --bs-gutter-y: 4.5rem !important;
+}
+
+.gy-7 {
+  --bs-gutter-y: 6rem !important;
+}
+
+.gy-8 {
+  --bs-gutter-y: 9rem !important;
+}
+
+.gy-9 {
+  --bs-gutter-y: 10.5rem !important;
+}
+
+.gy-10 {
+  --bs-gutter-y: 12rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 10rem !important;
+}
+
+.mt-8 {
+  margin-top: 8rem !important;
+}
+
+
+.attribution {
+  font-size: 11px;
+  background: #f5f6f8;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
